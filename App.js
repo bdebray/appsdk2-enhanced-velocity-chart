@@ -131,7 +131,7 @@ Ext.define('CustomApp', {
         }
         this.iterationFilters = iterationFilters;
         this.artifactStore = Ext.create('Rally.data.wsapi.artifact.Store',{
-            models: ['Defect', 'DefectSuite', 'UserStory'],
+            models: ['Defect', 'DefectSuite', 'UserStory', 'TestSet'],
             fetch: ['ObjectID','Name','FormattedID','ScheduleState','PlanEstimate','AcceptedDate','Iteration', 'Project', 'StartDate', 'EndDate'],
             limit: Infinity
         });
